@@ -10,11 +10,11 @@ namespace Assincrono
             try
             {
                 Calculo c = new Calculo();
-                Console.WriteLine("Chamei o método...", ConsoleColor.Yellow);
+                Console.WriteLine($"Chamei o método { nameof(c.imprimirNumeros)}...", ConsoleColor.Yellow);
                 c.imprimirNumeros();
                 //assicrono
                 //throw new Exception("Erro");
-                Console.WriteLine("Pronto! Tudo deu certo assim que terminar te aviso", ConsoleColor.Green);
+                Console.WriteLine("Pronto, Tudo deu certo! \nQuando eu terminar te aviso...", ConsoleColor.Green);
                 Console.WriteLine("--------------------------------------------------", ConsoleColor.Green);
                 Console.ReadKey();
             }
